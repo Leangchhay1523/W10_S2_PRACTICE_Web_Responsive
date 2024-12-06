@@ -1,0 +1,44 @@
+header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 48, 48);
+    font-weight: bold;
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+nav.short{
+    font-size: 1.5em;
+    display: none;
+}
+
+.logo-container{
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px)
+{
+    nav.long{
+        display: none;
+    }
+
+    nav.short{
+        display: block;
+    }
+}
